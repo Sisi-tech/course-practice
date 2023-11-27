@@ -1,7 +1,7 @@
 // Parent component: 
-function Dog() {
+function DataFlow() {
     return (
-        <div className="min-w-screen flex flex-col text-center justify-center text-gray-100">
+        <div className="flex flex-col text-center text-gray-100">
             <h2 className="text-3xl text-blue-700">Data Flow in React</h2>
             <h3 className="text-2xl py-1">Parent-chile data flow</h3>
             <p className="py-2 w-1/2 mx-auto">A React app consists of many components, organized as a component tree. The data flows from the root component to all the components in the tree structure that require this data, using props.</p>
@@ -27,4 +27,4 @@ function Bowl(props) {
     );
 }
 
-export default Dog;
+export default DataFlow;

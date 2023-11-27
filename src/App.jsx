@@ -1,5 +1,7 @@
 import Dog from "./DataFlow"
 import InputComponent from './Hooks'
+import MyVideoComponent from "./Video.jsx"
+
 
 
 function App() {
@@ -9,6 +11,7 @@ function App() {
       <h1 className="text-4xl font-serif py-2 text-gray-100 font-bold">Course Practice</h1>
       <Dog />
       <InputComponent />
+      <MyVideoComponent />
     </div>
 
   )

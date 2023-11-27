@@ -37,14 +37,14 @@ const Calculator = () => {
             </div>
             <form className='flex flex-col'>
                 <p ref={inputRef}>{result}</p>
-                <input className='text-gray-900' pattern='[0-9]' ref={inputRef} type="number" placeholder='Type a number' />
+                <input className='text-gray-900 px-2' pattern='[0-9]' ref={inputRef} type="number" placeholder='Type a number' />
                 <div className='grid grid-cols-2'>
-                    <button onClick={plus}>Add</button>
-                    <button onClick={minus}>Minus</button>
-                    <button onClick={times}>Multiply</button>
-                    <button onClick={divide}>Divide</button>
-                    <button onClick={resetInput}>Reset Input</button>
-                    <button onClick={resetResult}>ResetResult</button>
+                    <button className='bg-orange-600 rounded-lg m-2 p-1' onClick={plus}>Add</button>
+                    <button className='bg-orange-600 rounded-lg m-2 p-1'  onClick={minus}>Minus</button>
+                    <button className='bg-orange-600 rounded-lg m-2 p-1' onClick={times}>Multiply</button>
+                    <button className='bg-orange-600 rounded-lg m-2 p-1' onClick={divide}>Divide</button>
+                    <button className='bg-orange-600 rounded-lg m-2 p-1' onClick={resetInput}>Reset Input</button>
+                    <button className='bg-orange-600 rounded-lg m-2 p-1' onClick={resetResult}>ResetResult</button>
                 </div>
             </form>
         </div>

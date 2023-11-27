@@ -1,3 +1,4 @@
+import Calculator from "./calculator"
 import Dog from "./DataFlow"
 import InputComponent from './Hooks'
 import MyVideoComponent from "./Video.jsx"
@@ -12,6 +13,7 @@ function App() {
       <Dog />
       <InputComponent />
       <MyVideoComponent />
+      <Calculator />
     </div>
 
   )

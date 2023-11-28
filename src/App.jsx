@@ -3,6 +3,8 @@ import DataFlow from "./DataFlow"
 import InputComponent from './Hooks'
 import MyVideoComponent from "./Video.jsx"
 import { BrowserRouter, Route, Routes, Link} from "react-router-dom";
+import DessertsList from "./Desserts";
+import dessertsList from './DessertsData.jsx';
 
 
 
@@ -17,12 +19,14 @@ function App() {
         <Link to="/inputComponent">InputComponent</Link>
         <Link to="/myVideoComponent">MyVideoComponent</Link>
         <Link to="/calculator">Calculator</Link>
+        <Link to='/basicList'>BasicList</Link>
       </nav>
         <Routes>
           <Route path='/dataFlow' element={<DataFlow />} />
           <Route path='/inputComponent' element={<InputComponent />} />
           <Route path='/myVideoComponent' element={<MyVideoComponent />} />
           <Route path='/calculator' element={<Calculator />} />
+          <Route path='/basicList' element={<DessertsList data={dessertsList} />} />
         </Routes>
       </BrowserRouter>
     </div>

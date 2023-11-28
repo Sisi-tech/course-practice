@@ -2,9 +2,10 @@ import Calculator from "./calculator"
 import DataFlow from "./DataFlow"
 import InputComponent from './Hooks'
 import MyVideoComponent from "./Video.jsx"
-import { BrowserRouter, Route, Routes, Link} from "react-router-dom";
+import { BrowserRouter, Route, Routes, Link, Form} from "react-router-dom";
 import DessertsList from "./Desserts";
 import dessertsList from './DessertsData.jsx';
+import UncontrolledInput from "./UncontrolledInput";
 
 
 
@@ -20,6 +21,7 @@ function App() {
         <Link to="/myVideoComponent">MyVideoComponent</Link>
         <Link to="/calculator">Calculator</Link>
         <Link to='/basicList'>BasicList</Link>
+        <Link to='/uncontrolledInput'>UncontrolledInput</Link>
       </nav>
         <Routes>
           <Route path='/dataFlow' element={<DataFlow />} />
@@ -27,6 +29,7 @@ function App() {
           <Route path='/myVideoComponent' element={<MyVideoComponent />} />
           <Route path='/calculator' element={<Calculator />} />
           <Route path='/basicList' element={<DessertsList data={dessertsList} />} />
+          <Route path='/uncontrolledInput' element={<UncontrolledInput />} />
         </Routes>
       </BrowserRouter>
     </div>

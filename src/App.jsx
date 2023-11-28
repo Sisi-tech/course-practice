@@ -8,6 +8,8 @@ import dessertsList from './DessertsData.jsx';
 import UncontrolledInput from "./UncontrolledInput";
 import ControlledInput from "./ControlledInput";
 import ControlledForm from "./Form";
+import Feedback from "./Feedback";
+import Registration from "./Registration";
 
 
 
@@ -27,6 +29,8 @@ function App() {
         <Link to='/uncontrolledInput'>Uncontrolled Input</Link>
         <Link to='/controlledInput'>Controlled Input</Link>
         <Link to='/form'>Controlled Form</Link>
+        <Link to='/feedback'>FeedBack Form</Link>
+        <Link to='/registration'>Registration Form</Link>
       </nav>
         <Routes>
           <Route path='/dataFlow' element={<DataFlow />} />
@@ -37,6 +41,8 @@ function App() {
           <Route path='/uncontrolledInput' element={<UncontrolledInput />} />
           <Route path='/controlledInput' element={<ControlledInput />} />
           <Route path='/form' element={<ControlledForm/>} />
+          <Route path='/feedback' element={<Feedback />} />
+          <Route path='/registration' element={<Registration />} />
         </Routes>
       </BrowserRouter>
     </div>

@@ -7,6 +7,8 @@ import DessertsList from "./Desserts";
 import dessertsList from './DessertsData.jsx';
 import UncontrolledInput from "./UncontrolledInput";
 import ControlledInput from "./ControlledInput";
+import ControlledForm from "./Form";
+
 
 
 
@@ -24,6 +26,7 @@ function App() {
         <Link to='/basicList'>BasicList</Link>
         <Link to='/uncontrolledInput'>Uncontrolled Input</Link>
         <Link to='/controlledInput'>Controlled Input</Link>
+        <Link to='/form'>Controlled Form</Link>
       </nav>
         <Routes>
           <Route path='/dataFlow' element={<DataFlow />} />
@@ -33,6 +36,7 @@ function App() {
           <Route path='/basicList' element={<DessertsList data={dessertsList} />} />
           <Route path='/uncontrolledInput' element={<UncontrolledInput />} />
           <Route path='/controlledInput' element={<ControlledInput />} />
+          <Route path='/form' element={<ControlledForm/>} />
         </Routes>
       </BrowserRouter>
     </div>
